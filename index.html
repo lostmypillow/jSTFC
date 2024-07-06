@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta name="msapplication-TileColor" content="#410063" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#410063" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:site_name" content="STFC.space - Database" />
+
+    <meta property="description"
+          content="The largest Star Trek Fleet Command (STFC) information site, featuring information on ships, officers, systems, hostiles, research and more." />
+
+    <meta property="og:title" content="STFC Database" />
+    <meta property="og:description"
+          content="The largest Star Trek Fleet Command (STFC) information site, featuring information on ships, officers, systems, hostiles, research and more." />
+    <meta property="og:image" content="{__META_IMAGE__}" />
+    <meta property="og:url" content="{__META_URL__}" />
+
+    <meta name="twitter:title" content="STFC Database" />
+    <meta name="twitter:description"
+          content="The largest Star Trek Fleet Command (STFC) information site, featuring information on ships, officers, systems, hostiles, research and more." />
+    <meta name="twitter:image" content="{__META_IMAGE__}" />
+    <meta name="twitter:card" content="summary" />
+
+    <title>STFC Database</title>
+    <script type="module" crossorigin src="/assets/index-CWETgqIb.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/assets-CeN1RBTi.js">
+    <link rel="modulepreload" crossorigin href="/assets/lodash-BCzYdpUn.js">
+    <link rel="modulepreload" crossorigin href="/assets/thumbs-Cuzlnca5.js">
+    <link rel="modulepreload" crossorigin href="/assets/index-CWETgqIb.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-CKTH4KoI.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-RHMNH-V_.css">
+    <link rel="stylesheet" crossorigin href="/assets/vendor-DF4AVo2i.css">
+    <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+
+<body>
+<div id="app">
+    <div class="mx-auto my-auto flex flex-col">
+        <span>If you are stuck here, press the Reload Button</span>
+        <button class="border shadow mt-5" onclick="forceReloadServiceWorker()">
+            Reload
+        </button>
+    </div>
+</div>
+<script>
+    window.global = window;
+
+    function forceReloadServiceWorker() {
+        navigator.serviceWorker.getRegistration().then(function (reg) {
+            if (reg) {
+                reg.unregister().then(function () {
+                    window.location.reload(true);
+                });
+            } else {
+                window.location.reload(true);
+            }
+        });
+    }
+</script>
+</body>
+
+</html>
